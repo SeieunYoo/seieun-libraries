@@ -1,1 +1,2 @@
 # seieun-config
+- eslint
