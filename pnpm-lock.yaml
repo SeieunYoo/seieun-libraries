@@ -87,6 +87,10 @@ importers:
         version: 5.7.3
 
   packages/eslint-config:
+    dependencies:
+      prettier:
+        specifier: ^3.0.0
+        version: 3.4.2
     devDependencies:
       '@eslint/js':
         specifier: ^9.18.0
@@ -3301,7 +3305,6 @@ packages:
     resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
 
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
