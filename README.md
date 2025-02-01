@@ -1,2 +1,2 @@
-# seieun-config
-- eslint
+# seieun-libraries
+- eslint config
