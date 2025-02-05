@@ -8,6 +8,12 @@ interface ButtonProps {
   appName: string;
 }
 
+/**
+ *
+ * @param children 어쩌구저쩌구 입니다
+ * @param className 어쩌구저쩌구 입니다
+ * @returns
+ */
 export const Button = ({ children, className, appName }: ButtonProps) => {
   return (
     <button

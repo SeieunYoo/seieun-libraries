@@ -1,8 +1,11 @@
 {
-  "name": "@repo/typescript-config",
-  "version": "0.0.0",
-  "private": true,
+  "name": "seieun-typescript-config",
+  "version": "0.0.1",
   "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "typescript"
+  ],
   "publishConfig": {
     "access": "public"
   }
