@@ -1,5 +1,6 @@
 import { Button } from "@repo/ui/button";
 import Image, { type ImageProps } from "next/image";
+import { formatDateToISOString, isMobileUser } from "seieun-utils";
 
 import styles from "./page.module.css";
 
@@ -11,6 +12,11 @@ type Props = Omit<ImageProps, "src"> & {
 const ThemeImage = (props: Props) => {
   const { srcLight, srcDark, ...rest } = props;
 
+  const isMobileUserAgent = isMobileUser();
+  console.log(isMobileUserAgent);
+
+  const date = formatDateToISOString(new Date());
+  console.log(date);
   return (
     <>
       <Image {...rest} className="imgLight" src={srcLight} />
