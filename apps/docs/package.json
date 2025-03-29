@@ -15,7 +15,7 @@
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "seieun-utils": "^0.0.2"
+    "seieun-utils": "workspace:*"
   },
   "devDependencies": {
     "seieun-eslint-config": "^0.0.1",
