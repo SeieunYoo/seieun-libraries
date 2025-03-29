@@ -27,7 +27,7 @@ const ThemeImage = (props: Props) => {
 
 export default function Home() {
   const now = new Date();
-  const startDate = new Date("2025-03-29T00:00");
+  const utcStartDate = new Date("2025-03-29T00:00");
   const formattedDate = formatDateToISOString(now);
   return (
     <div className={styles.page}>
@@ -35,11 +35,13 @@ export default function Home() {
         <div>
           {now.toISOString()} : now
           <br />
-          {startDate.toISOString()} : startDate
+          {utcStartDate.toISOString()} : utc start date
+          <br />
+          {new Date("2025-03-29 00:00:00").toISOString()} : kst start date
           <br />
           {formattedDate} : formattedDate
           <br />
-          {new Date(formattedDate).toDateString()} : formattedDate
+          {formatDateToISOString(utcStartDate)} : formattedDate formattedDate
           <br />
         </div>
 
