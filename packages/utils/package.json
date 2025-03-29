@@ -21,7 +21,8 @@
   "main": "src/index.ts",
   "files": [
     "dist",
-    "package.json"
+    "package.json",
+    "README.md"
   ],
   "license": "MIT",
   "type": "module",
