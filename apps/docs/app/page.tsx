@@ -26,9 +26,23 @@ const ThemeImage = (props: Props) => {
 };
 
 export default function Home() {
+  const now = new Date();
+  const startDate = new Date("2025-03-29T00:00");
+  const formattedDate = formatDateToISOString(now);
   return (
     <div className={styles.page}>
       <main className={styles.main}>
+        <div>
+          {now.toISOString()} : now
+          <br />
+          {startDate.toISOString()} : startDate
+          <br />
+          {formattedDate} : formattedDate
+          <br />
+          {new Date(formattedDate).toDateString()} : formattedDate
+          <br />
+        </div>
+
         <ThemeImage
           priority
           alt="Turborepo logo"
