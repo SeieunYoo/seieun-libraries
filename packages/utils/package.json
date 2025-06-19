@@ -16,6 +16,11 @@
       "require": "./dist/userAgent/index.cjs",
       "import": "./dist/userAgent/index.js",
       "types": "./dist/userAgent/index.d.ts"
+    },
+    "./number": {
+      "require": "./dist/number/index.cjs",
+      "import": "./dist/number/index.js",
+      "types": "./dist/number/index.d.ts"
     }
   },
   "main": "src/index.ts",
